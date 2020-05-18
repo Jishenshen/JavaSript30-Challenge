@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  background-image: url("https://i.imgur.com/b9r5sEL.jpg");
+  height: 100vh;
+  text-align: center;
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.each-item {
+  width: 100px;
+  height: 100px;
+  border: 5px black solid;
+  background: rgba(0, 0, 0, 0.3);
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.title {
+  color: aliceblue;
+  font-size: 2rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 10px 0;
+  z-index: 1;
+}
+
+.description {
+  color: #ffc600;
+  align-items: center;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+}
