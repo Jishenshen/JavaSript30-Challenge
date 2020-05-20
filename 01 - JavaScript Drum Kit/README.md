@@ -1,8 +1,8 @@
 # 难点
 
-### 1. Javascript
+## 1. Javascript
 
-- 获取文档中有 "key-code" 属性的 <html> 元素：
+- ## 获取文档中有 "key-code" 属性的 <html> 元素：
 
 ```javascript
 document.querySelector("a[target]");
@@ -15,13 +15,13 @@ let audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
 let key = document.querySelector(`li[data-key]="${e.keyCode}"`);
 ```
 
--Array.from
+- ## Array.from
 
 > The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.
 
 将所有的 each-item 都放在一个名为 keys 的 array 里
 
-### 2. css 属性的设置要点
+## 2. css 属性的设置要点
 
 - `transform: scale(1.1)`;--该属性在键盘被点击时将该元素缩放至原来的 1.1 倍。
 
