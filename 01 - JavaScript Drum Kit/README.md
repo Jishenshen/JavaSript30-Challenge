@@ -1,5 +1,12 @@
 # 难点
 
+想要实现 drum kit 效果，大致思路和解决方案如下：
+
+- 检测到键盘上什么键被按下--监听 keydown 事件
+- 在按键被按下的时候，播放音效--audio.play()
+- 在按键被按下的同时，播放动画--Element.classList.add('className')
+- 在动画结束后，移除动画，不然之后再点击不会有任何效果--Element.classList.remove('className')
+
 ## 1. Javascript
 
 - ## 获取文档中有 "key-code" 属性的 <html> 元素：
