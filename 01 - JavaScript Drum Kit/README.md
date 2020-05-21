@@ -7,7 +7,7 @@
 - 在按键被按下的同时，播放动画--Element.classList.add('className')
 - 在动画结束后，移除动画，不然之后再点击不会有任何效果--Element.classList.remove('className')
 
-## 1. Javascript
+## Javascript
 
 - ## 获取文档中有 "key-code" 属性的 <html> 元素：
 
