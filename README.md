@@ -12,4 +12,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 ### Task List
 
 - [x] 01-Javascript Drum Kit
-- [ ] 02-Javascript CSS Clock
+- [x] 02-Javascript CSS Clock
+- [ ] 03-CSS Variables and JS
