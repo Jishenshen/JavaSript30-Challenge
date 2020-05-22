@@ -42,7 +42,7 @@
       const input = document.querySelectorAll('.controls input')
 
       function inputHandler () {
-        let suffix = this.dataset.sizing || ''
+        let suffix = this.dataset.sizing || '' //颜色的时候为‘’
         document.documentElement.style.setProperty(
           `--${this.name}`,
           this.value + suffix
