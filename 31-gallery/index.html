@@ -54,7 +54,7 @@
           <p>Description</p>
           <button>View</button>
         </li>
-        <li data-img="">
+        <li data-img="https://images.pexels.com/photos/1724888/pexels-photo-1724888.jpeg?cs=srgb&dl=abstract-painting-1724888.jpg&fm=jpg">
           <h3>Day 05</h3>
           <p>Description</p>
           <button>View</button>
@@ -82,10 +82,7 @@
       const gallery = document.getElementById('gallery')
       const liList = gallery.getElementsByTagName('li')
       for (let i = 0; i < liList.length; i++) {
-        console.log(liList[i].dataset)
         liList[i].style.backgroundImage = `url(${liList[i].dataset.img})`
-        //liList[i].getElementsByTagName('button')[0].style.background =
-        //  colors[Math.floor(Math.random() * 2)]
       }
     </script>
   </body>
