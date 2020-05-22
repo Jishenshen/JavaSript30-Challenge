@@ -22,6 +22,10 @@ let audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
 let key = document.querySelector(`li[data-key]="${e.keyCode}"`);
 ```
 
+keyCode[网站](http://keycode.info/)
+
+> For keydown and keyup events, the event object’s keyCode property is filled in with a code that maps to a specific key on the keyboard.
+
 - ## Array.from
 
 > The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.
