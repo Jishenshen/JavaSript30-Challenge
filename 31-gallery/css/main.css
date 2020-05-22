@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* 盒模型 */
+}
+
+body {
+  font-size: 10px;
+  font-family: Helvetica, sans-serif;
+  background-image: url("../img/01.jpeg");
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center bottom;
+  /* asking */
+  background-repeat: no-repeat;
+  background-color: #ececee;
+}
+
+header {
+  padding: 8px 24px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav img {
+  height: 32px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 1.6em;
+  padding: 8px 8px;
+}
+
+.main-gallery {
+  padding-top: 92px;
+  padding-bottom: 64px;
+}
+
+.main-gallery ul {
+  list-style: none;
+  display: flex;
+  overflow-x: scroll;
+
+  width: 80%;
+  margin: 0 auto;
+  /* padding-left: 64px; */
+}
+.main-gallery ul::-webkit-scrollbar {
+  display: none;
+}
+/* 取消滑动条 */
+
+.main-gallery ul li {
+  min-width: 300px;
+  height: 200px;
+  margin-left: 64px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: aqua;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 20px 3px rgba(217, 217, 217, 0.77);
+
+  -moz-box-shadow: 0px 0px 20px 3px rgba(217, 217, 217, 0.77);
+
+  box-shadow: 0px 0px 20px 3px rgba(217, 217, 217, 0.77);
+  /* 哪里找？ */
+  padding: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.main-gallery ul li h3 {
+  font-size: 2.8em;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 2px 8px;
+  mix-blend-mode: multiply;
+}
+
+.main-gallery ul li p {
+  font-size: 1.4em;
+  margin-top: 8px;
+  flex: 1;
+}
+
+.main-gallery ul li button {
+  background-color: #d92027;
+  padding: 12px 12px;
+  width: 120px;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 8px;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}

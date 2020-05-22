@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./img/logo.PNG" class="logo" />
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main-gallery">
+      <ul id="gallery">
+        <li
+          data-img="https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        >
+          <h3>Day 01</h3>
+          <p>Description</p>
+          <button>View</button>
+        </li>
+        <li
+          data-img="
+        https://images.pexels.com/photos/1585325/pexels-photo-1585325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+    "
+        >
+          <h3>Day 02</h3>
+          <p>Description</p>
+          <button>View</button>
+        </li>
+        <li
+          data-img="
+        https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+    "
+        >
+          <h3>Day 03</h3>
+          <p>Description</p>
+          <button>View</button>
+        </li>
+
+        <li
+          data-img="
+        https://images.pexels.com/photos/1616403/pexels-photo-1616403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+    "
+        >
+          <h3>Day 04</h3>
+          <p>Description</p>
+          <button>View</button>
+        </li>
+        <li data-img="">
+          <h3>Day 05</h3>
+          <p>Description</p>
+          <button>View</button>
+        </li>
+        <li
+          data-img="https://images.pexels.com/photos/1279813/pexels-photo-1279813.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        >
+          <h3>Day 06</h3>
+          <p>Description</p>
+          <button>View</button>
+        </li>
+        <li
+          data-img="https://images.pexels.com/photos/1561020/pexels-photo-1561020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        >
+          <h3>Day 07</h3>
+          <p>Description</p>
+          <button>View</button>
+        </li>
+      </ul>
+    </section>
+    <footer class="footer"></footer>
+
+    <script>
+      //const colors = ['#d92027', '#f37121']
+      const gallery = document.getElementById('gallery')
+      const liList = gallery.getElementsByTagName('li')
+      for (let i = 0; i < liList.length; i++) {
+        console.log(liList[i].dataset)
+        liList[i].style.backgroundImage = `url(${liList[i].dataset.img})`
+        //liList[i].getElementsByTagName('button')[0].style.background =
+        //  colors[Math.floor(Math.random() * 2)]
+      }
+    </script>
+  </body>
+</html>
