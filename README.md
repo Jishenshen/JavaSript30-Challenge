@@ -14,4 +14,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 - [x] 01-Javascript Drum Kit
 - [x] 02-Javascript CSS Clock
 - [x] 03-CSS Variables and JS
-- [ ] 04-Array Cardio Day 1
+- [x] 04-Array Cardio Day 1
+- [ ] 05-Flex Panel Image Gallery
