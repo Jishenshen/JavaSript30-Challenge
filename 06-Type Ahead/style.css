@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: #ffc600;
+  background-color: #7c94f4;
 }
 
 .search-form {
@@ -28,8 +28,8 @@ body {
 
 input {
   border: 10px solid #f7f7f7;
-  width: 420px;
-  height: 46px;
+  width: 500px;
+  height: 30px;
   border-radius: 2%;
   display: flex;
   margin: 0px auto;
@@ -48,8 +48,8 @@ input {
 
 ul li {
   padding: 14px;
-  width: 360px;
-  height: 56px;
+  width: 400px;
+  height: 40px;
   background-color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
   font-size: 20px;
