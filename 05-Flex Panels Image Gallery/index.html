@@ -34,6 +34,40 @@
         <p>motion</p>
       </div>
     </div>
-    <script></script>
+    <script>
+      const panels = document.querySelectorAll('.panel')
+
+      function clearOpen () {
+        panels.forEach(panel => {
+          panel.classList.remove('open')
+        })
+      }
+
+      function addOpen () {
+        if (this.classList.contains('open')) {
+          clearOpen()
+          this.classList.remove('open')
+        } else {
+          clearOpen()
+          this.classList.add('open')
+        }
+      }
+
+      //当add open后，改变了flex和font-size，所以
+      function addOpenActive (e) {
+        console.log(e.propertyName)
+        if (e.propertyName.includes('flex')) {
+          this.classList.toggle('open-active')
+        }
+      }
+
+      panels.forEach(panel => {
+        panel.addEventListener('click', addOpen)
+      })
+
+      panels.forEach(panel => {
+        panel.addEventListener('transitionend', addOpenActive)
+      })
+    </script>
   </body>
 </html>

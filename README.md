@@ -16,4 +16,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 - [x] 02-Javascript CSS Clock
 - [x] 03-CSS Variables and JS
 - [x] 04-Array Cardio Day 1
-- [ ] 05-Flex Panel Image Gallery
+- [x] 05-Flex Panel Image Gallery
+- [ ] 06-Type Ahead
