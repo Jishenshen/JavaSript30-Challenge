@@ -18,4 +18,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 - [x] 04-Array Cardio Day 1
 - [x] 05-Flex Panel Image Gallery
 - [x] 06-Type Ahead
-- [ ] 07-Array Cardio Day 2
+- [x] 07-Array Cardio Day 2
+- [ ] 08-Fun with HTML5 Canvas
