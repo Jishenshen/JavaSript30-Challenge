@@ -60,10 +60,18 @@ ul li {
 
 ul > *:nth-child(odd) {
   background: linear-gradient(to top, #ffffff 0%, #efefef 100%);
-  transform: perspective(100px) rotateX(-3deg);
+  transform: perspective(100px) rotateX(-3deg) scale(1.001) translateY(0px);
 }
 
 ul > *:nth-child(even) {
   background: linear-gradient(to bottom, #ffffff 0%, #efefef 100%);
-  transform: perspective(100px) rotateX(3deg) translateY(-3px);
+  transform: perspective(100px) rotateX(3deg) translateY(-1px);
+}
+
+.population {
+  font-size: 14px;
+}
+
+.hl {
+  background-color: #7c94f4;
 }
