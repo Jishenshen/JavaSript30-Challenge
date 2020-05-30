@@ -1,8 +1,61 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 li {
   list-style: none;
+}
+html {
+  font-size: 10px;
+  font-family: monospace;
+}
+body {
+  background-color: #ffc000;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 400px;
+  min-height: 50vh;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 8px 6px rgba(153, 153, 153, 0.3);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input {
+  align-items: center;
+  width: 18%;
+}
+
+input[type="checkbox"]:checked + p {
+  background-color: #f9f9f9;
+  text-decoration: line-through;
+  font-style: italic;
+  color: grey;
+}
+
+p {
+  font-size: 1.6em;
+  border-left: 1px solid #d1e2ff;
+  text-align: left;
+  flex: 1;
+  padding: 20px;
+  transition: background 0.2;
+  /* what is transition used for? */
 }
