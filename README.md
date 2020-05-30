@@ -20,4 +20,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 - [x] 06-Type Ahead
 - [x] 07-Array Cardio Day 2
 - [ ] 08-Fun with HTML5 Canvas
-- [ ] 09-Dev Tools Domination
+- [x] 09-Dev Tools Domination
+- [ ] 10-Hold Shift to check multiple checkboxes
