@@ -27,5 +27,11 @@
 - 音量加减
 - 播放速度加减
 - 进度条操作
+
   1. 这里需要注意，offsetX & offsetY 相对于带有定位的父盒子的 x，y 坐标
      ![showcase](https://img-blog.csdn.net/20180612002242162?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MTM0MjU4NQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+  2. ```javaScript
+        progress.addEventListener('mousemove', e => mousedown && scrub(e))
+     ```
+     使用&&判断左右两变量，只有两个都为真的时候整体表达式才为真，且在判断时从左向右依次判断，若左变量就为假，就不会再去执行右边的表达式。

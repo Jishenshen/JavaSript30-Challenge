@@ -34,7 +34,8 @@ function handleProgress () {
 }
 
 function scrub (e) {
-  console.log(e)
+  let scrubTime = (e.offsetX / progress.offsetWidth) * viewer.duration
+  viewer.currentTime = scrubTime
 }
 
 //event
@@ -49,4 +50,8 @@ ranges.forEach(range => {
 
 viewer.addEventListener('timeupdate', handleProgress)
 
+let mousedown = false
 progress.addEventListener('click', scrub)
+progress.addEventListener('mousemove', e => mousedown && scrub(e))
+progress.addEventListener('mousedown', () => (mousedown = true))
+progress.addEventListener('mouseup', () => (mousedown = false))
