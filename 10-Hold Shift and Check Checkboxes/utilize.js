@@ -4,6 +4,8 @@ let lastChecked
 function checkHandle (e) {
   let inBetween = false
   //   lastChecked = this
+  // console.log(e)
+  // console.log(this)
   //check if shiftkey is pressed
   if (e.shiftKey && this.checked) {
     checkboxes.forEach(checkbox => {
