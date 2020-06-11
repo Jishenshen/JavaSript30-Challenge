@@ -22,4 +22,6 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 - [ ] 08-Fun with HTML5 Canvas
 - [x] 09-Dev Tools Domination
 - [x] 10-Hold Shift to check multiple checkboxes
-- [ ] 11-Custom Video Player
+- [x] 11-Custom Video Player
+- [ ] 12-Key Sequence Detection
+- [ ] 12-Slide in on Scroll
