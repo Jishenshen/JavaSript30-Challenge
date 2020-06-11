@@ -24,4 +24,4 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 - [x] 10-Hold Shift to check multiple checkboxes
 - [x] 11-Custom Video Player
 - [ ] 12-Key Sequence Detection
-- [ ] 12-Slide in on Scroll
+- [x] 13-Slide in on Scroll
