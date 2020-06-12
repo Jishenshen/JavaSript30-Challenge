@@ -25,3 +25,4 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 - [x] 11-Custom Video Player
 - [ ] 12-Key Sequence Detection
 - [x] 13-Slide in on Scroll
+- [ ] 14-JavaScript References VS Copying
