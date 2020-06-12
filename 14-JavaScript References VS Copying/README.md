@@ -64,7 +64,9 @@ console.log(players, playersCopy); //["Wes", "Sarah", "Ryan", "Lux"]
 //["Wes", "Sarah", "Ryan", "Lux"]
 ```
 
-## array 真正的复制
+## 真正的复制
+
+### array 复制
 
 - #### Array.prototype.slice()
   由于运行 slice 得到的结果是一个对原数组的浅拷贝，原数组不会被修改。所以如果修改这两个数组中任意 一个，另一个都不会受到影响。
