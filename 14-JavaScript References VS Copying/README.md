@@ -64,15 +64,22 @@ console.log(players, playersCopy); //["Wes", "Sarah", "Ryan", "Lux"]
 //["Wes", "Sarah", "Ryan", "Lux"]
 ```
 
-## 真正的 复制
+## array 真正的复制
 
-- Array.prototype.slice()
+- #### Array.prototype.slice()
   由于运行 slice 得到的结果是一个对原数组的浅拷贝，原数组不会被修改。所以如果修改这两个数组中任意 一个，另一个都不会受到影响。
-- Array.prototype.concat()
+- #### Array.prototype.concat()
   concat() 方法是用来合并数组的，它也不会更改原有的数组，而是返回一个新数组，所以可以将 players 数组与一个空数组合并，得到的结果就符合预期了。
-- 扩展语法[...]
+- #### 扩展语法[...]
   ```javascript
   const playersCopy4 = [...players];
   playersCopy4[3] = "jeff";
   console.log(playersCopy4);
   ```
+- #### Array.from()
+
+### object 的复制
+
+- #### assign 浅复制
+- #### JSON.parse(JSON.stringify(obj))
+  首先调用 JSON.stringify()方法将对象解析为字符串，再调用 JSON.parse()方法，将字符串解析为对象，这是一个小技巧，在处理对象的复制时很有用
