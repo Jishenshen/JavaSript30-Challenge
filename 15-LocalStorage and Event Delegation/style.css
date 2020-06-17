@@ -38,6 +38,59 @@ svg {
   /* border: 1px solid rgba(0, 0, 0, 0.3); */
   max-width: 400px;
   padding: 20px;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
+  opacity: 0.9;
   box-shadow: 5px 5px 20px;
+}
+
+h2 {
+  font-size: 1.8em;
+  font: uppercase;
+}
+
+.plates {
+  text-align: left;
+}
+
+.plates li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  display: flex;
+}
+
+.plates label {
+}
+
+.add-items {
+  margin: 20px 0;
+}
+
+.add-items input {
+  height: 37px;
+  border: 1px solid #cfcfcf;
+  padding: 10px;
+}
+
+.plates input {
+  display: none;
+}
+/* didn't show the content of box */
+
+.plates input + label::before {
+  content: "⬜️";
+  margin-right: 10px;
+}
+.plates input[type="checkbox"]:checked + label:before {
+  content: "❤️";
+}
+
+.checkMethod {
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.check-all {
+  margin-left: 5px;
 }

@@ -2,6 +2,8 @@
 
 - wesbos 官方[repo](https://github.com/Jishenshen/JavaScript30)
 - 中文难点解析参考文档[JavaScript30-Challenge](https://github.com/winar-jin/JavaScript30-Challenge)
+- 题目解析精品[JS30 紀錄＆心得](https://guahsu.io/categories/JavaScript30/) PS: JAVASCRIPT GALLERY 个人博客学习
+
 - Course video[课程视频](https://courses.wesbos.com/account/access/5ec2b36e9edbdf3638124954/view/194130650)
 
 # JavasSript30
@@ -26,4 +28,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 - [ ] 12-Key Sequence Detection
 - [x] 13-Slide in on Scroll
 - [x] 14-JavaScript References VS Copying
-- [ ] 15-LocalStorage and Event Delegation
+- [x] 15-LocalStorage and Event Delegation
+- [ ] 16-Mouse Move Shadow
