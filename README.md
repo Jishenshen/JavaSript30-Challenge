@@ -29,4 +29,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 - [x] 13-Slide in on Scroll
 - [x] 14-JavaScript References VS Copying
 - [x] 15-LocalStorage and Event Delegation
-- [ ] 16-Mouse Move Shadow
+- [x] 16-Mouse Move Shadow
+- [ ] 17-Sort Without Articles
