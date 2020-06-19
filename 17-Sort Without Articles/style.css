@@ -1,0 +1,38 @@
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: url("https://source.unsplash.com/nDqA4d5NL0k/2000x2000");
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+}
+
+.wrapper {
+  list-style: inside square;
+  font-size: 20px;
+  background: white;
+  width: 500px;
+  margin: auto;
+  padding: 0;
+  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper li {
+  border-bottom: 1px solid #efefef;
+  padding: 20px;
+}
+
+.wrapper li:last-child {
+  border-bottom: none;
+}
