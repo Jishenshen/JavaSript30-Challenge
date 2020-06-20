@@ -1,0 +1,11 @@
+{
+  "name": "19-webcam-fun",
+  "version": "1.0.0",
+  "description": "webcam",
+  "main": "utilize.js",
+  "scripts": {
+    "start": "browser-sync start --server --files \"*.css, *.html, *.js\""
+  },
+  "author": "",
+  "license": "ISC"
+}

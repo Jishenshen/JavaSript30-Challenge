@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff3c8;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+.photobooth {
+  font-size: 1.4em;
+  background: white;
+  max-width: 150rem;
+  margin: 2rem auto;
+  border-radius: 2px;
+}
+
+input {
+  margin-right: 20px;
+}
+
+.photo {
+  width: 100%;
+  float: left;
+}
