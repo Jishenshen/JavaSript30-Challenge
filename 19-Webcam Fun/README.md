@@ -15,9 +15,9 @@ reference: https://soyaine.github.io/JavaScript30/19%20-%20Webcam%20Fun/index-fi
 
 调用摄像头，将摄像头返回的媒体流渲染到视频标签`<video>`中，再通过 `canvas` 绘制到画布上面，最后通过 canvas 分析拍下来的图片，使用滑块来改变图片的 rgb
 
-### JS
+## JavaScript
 
-##### 1. 调用摄像头
+### 1. 调用摄像头
 
 ```javascript
 function getVideo() {
@@ -37,7 +37,7 @@ function getVideo() {
 
 > 这里需要注意的是，URL.createObjectURL 方法在 chrome 浏览器中报错，原因为[Remove URL.createObjectURL from MediaStream](https://developers.google.com/web/updates/2018/10/chrome-71-deps-rems#remove_urlcreateobjecturl_from_mediastream)。取代方案：`video.srcObject = localMediaStream`
 
-##### 2. 将 live 图像用 canvas 绘制到页面中
+### 2. 将 live 图像用 canvas 绘制到页面中
 
 ```javascript
 function createCanvas() {
@@ -70,7 +70,7 @@ function createCanvas() {
 video.addEventListener('canplay', createCanvas)
 ```
 
-##### 3. 实现拍摄图片并保存的功能
+### 3. 实现拍摄图片并保存的功能
 
 点击 savePhoto()函数时调用 canvas 的 toDataUrl()方法即可获得 canvas 中的图像数据，默认格式为 png，也可修改为其他格式，生成的图像数据指定给 img.src 时即可预览图片;
 
@@ -94,7 +94,7 @@ function takePhoto() {
 
 > 参阅：[MDN-HTMLCanvasElement.toDataURL()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL) && [MDN-Node.insert Before()](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore)
 
-##### 4. 实现滤镜效果
+### 4. 实现滤镜效果
 
 1. [getImageData()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData)方法获取 canvas 图像的 pixel data, 为 rgba 循环
 
