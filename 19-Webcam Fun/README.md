@@ -17,13 +17,85 @@ reference: https://soyaine.github.io/JavaScript30/19%20-%20Webcam%20Fun/index-fi
 
 ### JS
 
-1. URL.createObjectURL 方法在 chrome 浏览器中报错，原因为[Remove URL.createObjectURL from MediaStream](https://developers.google.com/web/updates/2018/10/chrome-71-deps-rems#remove_urlcreateobjecturl_from_mediastream)。取代方案：`video.srcObject = localMediaStream`
+##### 1. 调用摄像头
 
-2. 当音频/视频处于加载过程中时，会依次发生以下事件：
-   - loadstart
-   - durationchange
-   - loadedmetadata
-   - loadeddata
-   - progress
-   - canplay
-   - canplaythrough
+```javascript
+function getVideo() {
+  //// 取得user的media devices
+  navigator.mediaDevices
+    .getUserMedia({ video: true, audio: false })
+    .then((localMediaStream) => {
+      //   console.log(localMediaStream)
+      video.srcObject = localMediaStream;
+      video.play();
+    })
+    .catch((err) => {
+      console.log(`Oh nop! ${err}`);
+    });
+}
+```
+
+> 这里需要注意的是，URL.createObjectURL 方法在 chrome 浏览器中报错，原因为[Remove URL.createObjectURL from MediaStream](https://developers.google.com/web/updates/2018/10/chrome-71-deps-rems#remove_urlcreateobjecturl_from_mediastream)。取代方案：`video.srcObject = localMediaStream`
+
+##### 2. 将 live 图像用 canvas 绘制到页面中
+
+```javascript
+function createCanvas() {
+  //js获取视频院士高度
+  //.height和.width是播放器尺寸
+  const width = video.videoWidth;
+  const height = video.videoHeight;
+  canvas.width = width;
+  canvas.height = height;
+
+  //you can have access to that interval and you can call clearInterval on it
+  return setInterval(() => {
+    ctx.drawImage(video, 0, 0, width, height);
+  }, 0);
+}
+```
+
+- 当音频/视频处于加载过程中时，会依次发生以下事件：
+  - loadstart
+  - durationchange
+  - loadedmetadata
+  - loadeddata
+  - progress
+  - canplay
+  - canplaythrough
+
+当浏览器能够开始播放指定的音频/视频时，发生 canplay 事件。
+
+```JavaScript
+video.addEventListener('canplay', createCanvas)
+```
+
+##### 3. 实现拍摄图片并保存的功能
+
+点击 savePhoto()函数时调用 canvas 的 toDataUrl()方法即可获得 canvas 中的图像数据，默认格式为 png，也可修改为其他格式，生成的图像数据指定给 img.src 时即可预览图片;
+
+```javascript
+function takePhoto() {
+  snap.currentTime = 0;
+  snap.play();
+
+  //save image
+  const imgData = canvas.toDataURL("image/jpeg");
+  const link = document.createElement("a");
+  link.href = imgData;
+  link.innerHTML = `<img src=${imgData} alt="your moment"/>`;
+
+  //Self-implemented download
+  link.setAttribute("download", "moment");
+  strip.insertBefore(link, strip.firstChild);
+  //   console.log(imgDat a)
+}
+```
+
+> 参阅：[MDN-HTMLCanvasElement.toDataURL()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL) && [MDN-Node.insert Before()](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore)
+
+##### 4. 实现滤镜效果
+
+1. [getImageData()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData)方法获取 canvas 图像的 pixel data, 为 rgba 循环
+
+2. 加上滤镜后，使用[putImageData()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/putImageData)方法将最新的像素作用在 canvas 图像上
