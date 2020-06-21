@@ -11,7 +11,7 @@ reference: https://soyaine.github.io/JavaScript30/19%20-%20Webcam%20Fun/index-fi
 - 3.允许用户保存展示的照片;
 - 4.使用滑块来改变图像的色彩。(滤镜)
 
-##### 原理
+#### 原理
 
 调用摄像头，将摄像头返回的媒体流渲染到视频标签`<video>`中，再通过 `canvas` 绘制到画布上面，最后通过 canvas 分析拍下来的图片，使用滑块来改变图片的 rgb
 
@@ -21,10 +21,10 @@ reference: https://soyaine.github.io/JavaScript30/19%20-%20Webcam%20Fun/index-fi
 
 2. 当音频/视频处于加载过程中时，会依次发生以下事件：
 
-> > - loadstart
-> > - durationchange
-> > - loadedmetadata
-> > - loadeddata
-> > - progress
-> > - canplay
-> > - canplaythrough
+- loadstart
+- durationchange
+- loadedmetadata
+- loadeddata
+- progress
+- canplay
+- canplaythrough
