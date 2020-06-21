@@ -31,4 +31,6 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 - [x] 15-LocalStorage and Event Delegation
 - [x] 16-Mouse Move Shadow
 - [x] 17-Sort Without Articles
-- [ ] 18-Adding Up Times with Reduce
+- [x] 18-Adding Up Times with Reduce
+- [x] 19-Webcam Fun
+- [ ] 20-Native Speech Recognition
