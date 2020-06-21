@@ -21,10 +21,10 @@ reference: https://soyaine.github.io/JavaScript30/19%20-%20Webcam%20Fun/index-fi
 
 2. 当音频/视频处于加载过程中时，会依次发生以下事件：
 
-- loadstart
-- durationchange
-- loadedmetadata
-- loadeddata
-- progress
-- canplay
-- canplaythrough
+> > - loadstart
+> > - durationchange
+> > - loadedmetadata
+> > - loadeddata
+> > - progress
+> > - canplay
+> > - canplaythrough
