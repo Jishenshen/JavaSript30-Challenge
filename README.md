@@ -1,6 +1,6 @@
 > 项目来自于 wesbos Javascript30 天挑战，旨在使用纯 Js 来进行练习，该挑战共 30 天，我会在这里记录下自己练习的过程和遇到的问题。
 
-- wesbos 官方[repo](https://github.com/Jishenshen/JavaScript30)
+- wesbos 官方[repo](https://github.com/wesbos/JavaScript30)
 - 中文难点解析参考文档[JavaScript30-Challenge](https://github.com/winar-jin/JavaScript30-Challenge)
 - 题目解析精品[JS30 紀錄＆心得](https://guahsu.io/categories/JavaScript30/) PS: JAVASCRIPT GALLERY 个人博客学习
 
