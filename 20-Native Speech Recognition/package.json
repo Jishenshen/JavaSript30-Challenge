@@ -1,0 +1,21 @@
+{
+  "name": "day20-native-speech-recognition",
+  "version": "1.0.0",
+  "description": "this is day20 js challenge",
+  "main": "utilize.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files \"*.css, *.html, *.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jishenshen/JavaSript30-Challenge/tree/master/20-Native%20Speech%20Recognition"
+  },
+  "keywords": [
+    "web",
+    "speech",
+    "api"
+  ],
+  "author": "Jishenshen",
+  "license": "ISC"
+}
