@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px;
+  /* 这里的background-size是用来做小圆圈重复的 */
+  background-attachment: fixed;
+}
+
+.arrow {
+  width: 250px;
+  height: 250px;
+  transition: all 0.2s;
+  overflow: hidden;
+  display: inline-block;
+  transform: rotate(0deg);
+}
+
+h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 60px;
+  align-items: center;
+  display: flex;
+}
+
+.units {
+  font-size: 15px;
+}

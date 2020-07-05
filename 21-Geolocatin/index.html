@@ -52,6 +52,18 @@
       <span class="speed-value">0</span>
       <span class="units">KM/H</span>
     </h1>
-    <script></script>
+    <script>
+    const arrow = document.querySelector('.arrow')
+    const speed = document.querySelector('.speed-value')
+
+    navigator.geolocation.watchPosition(data=>{
+      console.log(data)
+      speed.textContent = math.round(data.coords.speed);
+      arrow.style.transform = `rotate(${data.coords.heading}deg)`
+    },(err)=>{
+      console.log(err);
+      alert('you got an arrow happening')
+    })
+    </script>
   </body>
 </html>

@@ -11,5 +11,8 @@
     "geolocation"
   ],
   "author": "Jishenshen",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cordova-plugin-geolocation": "^4.0.2"
+  }
 }
