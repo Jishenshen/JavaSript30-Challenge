@@ -34,4 +34,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 - [x] 18-Adding Up Times with Reduce
 - [x] 19-Webcam Fun
 - [x] 20-Native Speech Recognition
-- [ ] 21-Geolocation
+- [x] 21-Geolocation
+- [ ] 22-Follow Along Link Highlighter
