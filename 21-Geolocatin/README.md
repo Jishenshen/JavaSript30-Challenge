@@ -11,6 +11,5 @@
 1. [Geolocation](http://localhost:3000/) 的两个主要方法：
    - [watchPosition()](http://localhost:3000/)
    - getCurrentPosition(): 只获取一次当前的位置
-   -
 
 <b>该功能在 https 下可正常使用，webos 用了 xcode 的 simulator，使用了 external urls，但是目前 safari block 了 insecure connection，目前还在找解决方案</b>
