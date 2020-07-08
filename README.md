@@ -35,4 +35,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 - [x] 19-Webcam Fun
 - [x] 20-Native Speech Recognition
 - [x] 21-Geolocation
-- [ ] 22-Follow Along Link Highlighter
+- [x] 22-Follow Along Link Highlighter
+- [ ] 23-Speech Synthesis
