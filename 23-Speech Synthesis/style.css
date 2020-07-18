@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: sans-serif;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  background-image: url("https://images.pexels.com/photos/4710891/pexels-photo-4710891.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  margin: 0 auto;
+  background-color: white;
+  /* border: 1px solid; */
+  min-height: 56%;
+  min-width: 26%;
+  -webkit-box-shadow: 10px 0px 38px 3px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 10px 0px 38px 3px rgba(0, 0, 0, 0.28);
+  box-shadow: 10px 0px 38px 3px rgba(0, 0, 0, 0.28);
+  border-radius: 10px;
+}
+
+.header {
+  background-color: rgb(157, 247, 229);
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Pacifico", cursive;
+  text-shadow: 1px 1px 0.3px;
+  border-bottom: 5px solid rgb(94, 252, 220);
+}
+
+.setting {
+  position: relative;
+  margin: 10px 10px;
+}
+
+.setting input,
+.setting select,
+.setting textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  background-color: #f7f7f7;
+  font-size: 1.6rem;
+  display: block;
+}
+
+.setting label {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.setting .buttonSets {
+  display: inline;
+}
+
+select {
+  border: 0px;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 1.6rem;
+  -webkit-appearance: none;
+}
+
+textarea {
+  height: 20rem;
+  padding: 10px;
+}
+
+.setting button {
+  background-color: rgb(157, 247, 229);
+  padding: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+  border: 0;
+  border-bottom: 5px solid rgb(94, 252, 220);
+  width: 48%;
+  cursor: pointer;
+  margin-bottom: 0;
+  position: relative;
+  float: left;
+}
+
+.setting button:nth-of-type(1) {
+  margin-right: 2%;
+}
+
+.setting button:active {
+  top: 2px;
+}
