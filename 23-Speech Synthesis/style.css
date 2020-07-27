@@ -28,8 +28,7 @@ body {
 .wrapper {
   margin: 0 auto;
   background-color: white;
-  /* border: 1px solid; */
-  min-height: 56%;
+  min-height: 58%;
   min-width: 26%;
   -webkit-box-shadow: 10px 0px 38px 3px rgba(0, 0, 0, 0.28);
   -moz-box-shadow: 10px 0px 38px 3px rgba(0, 0, 0, 0.28);
