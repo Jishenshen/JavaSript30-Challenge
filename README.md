@@ -36,4 +36,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 - [x] 20-Native Speech Recognition
 - [x] 21-Geolocation
 - [x] 22-Follow Along Link Highlighter
-- [ ] 23-Speech Synthesis
+- [x] 23-Speech Synthesis
+- [ ] 24-Sticky Nav
