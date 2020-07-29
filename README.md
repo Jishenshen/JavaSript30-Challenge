@@ -37,4 +37,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 - [x] 21-Geolocation
 - [x] 22-Follow Along Link Highlighter
 - [x] 23-Speech Synthesis
-- [ ] 24-Sticky Nav
+- [x] 24-Sticky Nav
+- [ ] Event Capture, Propagation, Bubbling and Once
