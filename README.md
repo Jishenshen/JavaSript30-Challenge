@@ -38,4 +38,5 @@ No frameworks, no libraries, no wrappers... just pure VanillaJS ;)
 - [x] 22-Follow Along Link Highlighter
 - [x] 23-Speech Synthesis
 - [x] 24-Sticky Nav
-- [ ] Event Capture, Propagation, Bubbling and Once
+- [x] 25-Event Capture, Propagation, Bubbling and Once
+- [ ] 26-Stripe Follow Along Nav

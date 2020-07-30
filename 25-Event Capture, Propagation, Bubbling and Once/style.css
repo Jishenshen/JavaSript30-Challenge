@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+div {
+  width: 100%;
+  padding: 100px;
+}
+.one {
+  background-color: thistle;
+}
+
+.two {
+  background-color: mistyrose;
+}
+
+.three {
+  background-color: coral;
+}
