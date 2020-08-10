@@ -15,8 +15,8 @@ function handleEnter(){
     const coords = {
         width : dropDownCoords.width,
         height: dropDownCoords.height,
-        top:dropDownCoords.top,
-        left:dropDownCoords.left
+        top:dropDownCoords.top-navCoords.top,
+        left:dropDownCoords.left-navCoords.left
     }
 
     background.style.setProperty('width',`${coords.width}px`)
