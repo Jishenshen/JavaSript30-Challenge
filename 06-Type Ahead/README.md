@@ -21,7 +21,7 @@
 - <b>数组扩展语法<b>
   将数据储存到 cities 这个数组中时，如果直接 `push(data)`,此时 cities 的 length 仅为 1，因此正确的语法为 `push(...data)`,涉及到的知识点为[ES6 中的数组扩展语法](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 
-- <b> 正则表达式<b>
+- <b> 正则表达式/b>
 
   ```js
   g(global)->全局匹配
